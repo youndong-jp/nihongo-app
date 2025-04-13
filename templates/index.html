@@ -1,0 +1,11 @@
+<!-- templates/index.html -->
+<h1>NihonGO! 일본어 퀴즈</h1>
+
+<!-- 기존 /start 라우트로 연결 -->
+<form action="{{ url_for('start') }}" method="get">
+    <button type="submit">📝 테스트 시작</button>
+</form>
+
+<form action="{{ url_for('vocab') }}" method="get">
+    <button type="submit">📘 단어장 보기</button>
+</form>

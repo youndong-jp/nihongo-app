@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}NihonGO!{% endblock %}</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .sidebar {
+            position: fixed;
+            right: 0;
+            top: 40%;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 8px 0 0 8px;
+            writing-mode: vertical-rl;
+            text-align: center;
+            cursor: pointer;
+        }
+        .content {
+            margin-right: 60px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a class="sidebar" href="{{ url_for('vocab') }}">
+        📘 単語帳
+    </a>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

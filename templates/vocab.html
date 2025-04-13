@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}단어장 - NihonGO!{% endblock %}
+
+{% block content %}
+<!-- 📘 페이지 제목 -->
+<h1>📘 저장된 단어장</h1>
+
+<!-- 🧹 전체 삭제 영역 -->
+<div style="margin-bottom: 20px;">
+    <form method="post" action="{{ url_for('clear_vocab') }}">
+        <button type="submit" style="background-color: red; color: white;">
+            🗑️ 전체 삭제
+        </button>
+    </form>
+</div>
+
+<!-- 📋 단어 리스트 -->
+<ul>
+  {% for item in vocab_list %}
+    <li style="margin-bottom: 8px;">
+      <!-- 단어 표시 -->
+      <strong>{{ item.question }}</strong> - {{ item.answer }}
+      {% if item.level %}
+        <span style="color: gray;">({{ item.level }})</span>
+      {% endif %}
+
+      <!-- ❌ 개별 삭제 버튼 -->
+      <form method="post" action="{{ url_for('delete_vocab') }}" style="display: inline;">
+        <input type="hidden" name="question" value="{{ item.question }}">
+        <input type="hidden" name="answer" value="{{ item.answer }}">
+        <button type="submit" style="margin-left: 10px;">❌ 삭제</button>
+      </form>
+    </li>
+  {% else %}
+    <li style="color: gray;">단어장이 비어 있습니다.</li>
+  {% endfor %}
+</ul>
+
+<!-- 🔙 처음으로 돌아가기 버튼 -->
+<div style="margin-top: 30px;">
+    <a href="{{ url_for('index') }}">
+        <button>🏠 처음으로</button>
+    </a>
+</div>
+{% endblock %}

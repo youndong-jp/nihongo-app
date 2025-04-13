@@ -1,0 +1,1202 @@
+[
+  {
+    "question": "食べる",
+    "answer": "먹다",
+    "hiragana": "たべる",
+    "choices": [
+      "먹다",
+      "읽다",
+      "달리다",
+      "말하다"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "水",
+    "answer": "물",
+    "hiragana": "みず",
+    "choices": [
+      "불",
+      "바람",
+      "물",
+      "흙"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "先生",
+    "answer": "선생님",
+    "hiragana": "せんせい",
+    "choices": [
+      "학생",
+      "친구",
+      "선생님",
+      "직원"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "車",
+    "answer": "자동차",
+    "hiragana": "くるま",
+    "choices": [
+      "자전거",
+      "기차",
+      "자동차",
+      "버스"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "学校",
+    "answer": "학교",
+    "hiragana": "がっこう",
+    "choices": [
+      "병원",
+      "학교",
+      "도서관",
+      "가게"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "犬",
+    "answer": "개",
+    "hiragana": "いぬ",
+    "choices": [
+      "고양이",
+      "사람",
+      "개",
+      "토끼"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "猫",
+    "answer": "고양이",
+    "hiragana": "ねこ",
+    "choices": [
+      "개",
+      "사자",
+      "고양이",
+      "여우"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "行く",
+    "answer": "가다",
+    "hiragana": "いく",
+    "choices": [
+      "오다",
+      "가다",
+      "걷다",
+      "달리다"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "見る",
+    "answer": "보다",
+    "hiragana": "みる",
+    "choices": [
+      "듣다",
+      "보다",
+      "말하다",
+      "앉다"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "小さい",
+    "answer": "작다",
+    "hiragana": "ちいさい",
+    "choices": [
+      "크다",
+      "작다",
+      "빠르다",
+      "느리다"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "大きい",
+    "answer": "크다",
+    "hiragana": "おおきい",
+    "choices": [
+      "작다",
+      "예쁘다",
+      "크다",
+      "빠르다"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "新しい",
+    "answer": "새롭다",
+    "hiragana": "あたらしい",
+    "choices": [
+      "낡다",
+      "새롭다",
+      "좋다",
+      "싫다"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "古い",
+    "answer": "낡다",
+    "hiragana": "ふるい",
+    "choices": [
+      "낡다",
+      "새롭다",
+      "빠르다",
+      "느리다"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "青",
+    "answer": "파랑",
+    "hiragana": "あお",
+    "choices": [
+      "빨강",
+      "노랑",
+      "파랑",
+      "초록"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "赤",
+    "answer": "빨강",
+    "hiragana": "あか",
+    "choices": [
+      "빨강",
+      "파랑",
+      "노랑",
+      "검정"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "黄色",
+    "answer": "노랑",
+    "hiragana": "きいろ",
+    "choices": [
+      "초록",
+      "노랑",
+      "하양",
+      "보라"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "黒",
+    "answer": "검정",
+    "hiragana": "くろ",
+    "choices": [
+      "하양",
+      "검정",
+      "회색",
+      "파랑"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "白",
+    "answer": "하양",
+    "hiragana": "しろ",
+    "choices": [
+      "검정",
+      "하양",
+      "노랑",
+      "빨강"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "本",
+    "answer": "책",
+    "hiragana": "ほん",
+    "choices": [
+      "펜",
+      "책",
+      "종이",
+      "노트"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "食べ物",
+    "answer": "음식",
+    "hiragana": "たべもの",
+    "choices": [
+      "음식",
+      "물건",
+      "장난감",
+      "옷"
+    ],
+    "level": "N5"
+  },
+  {
+    "question": "便利",
+    "answer": "편리하다",
+    "hiragana": "べんり",
+    "choices": [
+      "편리하다",
+      "불편하다",
+      "위험하다",
+      "편안하다"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "地下鉄",
+    "answer": "지하철",
+    "hiragana": "ちかてつ",
+    "choices": [
+      "기차",
+      "버스",
+      "지하철",
+      "택시"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "準備",
+    "answer": "준비",
+    "hiragana": "じゅんび",
+    "choices": [
+      "준비",
+      "복습",
+      "예습",
+      "복구"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "経験",
+    "answer": "경험",
+    "hiragana": "けいけん",
+    "choices": [
+      "경험",
+      "감각",
+      "지식",
+      "기억"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "説明",
+    "answer": "설명",
+    "hiragana": "せつめい",
+    "choices": [
+      "질문",
+      "설명",
+      "요약",
+      "응답"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "安全",
+    "answer": "안전",
+    "hiragana": "あんぜん",
+    "choices": [
+      "위험",
+      "걱정",
+      "불안",
+      "안전"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "必要",
+    "answer": "필요",
+    "hiragana": "ひつよう",
+    "choices": [
+      "불필요",
+      "필요",
+      "무의미",
+      "단순"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "大切",
+    "answer": "소중하다",
+    "hiragana": "たいせつ",
+    "choices": [
+      "소중하다",
+      "귀찮다",
+      "가볍다",
+      "작다"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "連絡",
+    "answer": "연락",
+    "hiragana": "れんらく",
+    "choices": [
+      "연락",
+      "방문",
+      "소식",
+      "상담"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "時間",
+    "answer": "시간",
+    "hiragana": "じかん",
+    "choices": [
+      "장소",
+      "기회",
+      "시간",
+      "목표"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "質問",
+    "answer": "질문",
+    "hiragana": "しつもん",
+    "choices": [
+      "답변",
+      "질문",
+      "요약",
+      "감상"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "趣味",
+    "answer": "취미",
+    "hiragana": "しゅみ",
+    "choices": [
+      "직업",
+      "습관",
+      "취미",
+      "기술"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "練習",
+    "answer": "연습",
+    "hiragana": "れんしゅう",
+    "choices": [
+      "복습",
+      "연습",
+      "독서",
+      "공부"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "友達",
+    "answer": "친구",
+    "hiragana": "ともだち",
+    "choices": [
+      "친구",
+      "가족",
+      "연인",
+      "동료"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "運動",
+    "answer": "운동",
+    "hiragana": "うんどう",
+    "choices": [
+      "공부",
+      "운동",
+      "취미",
+      "여행"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "掃除",
+    "answer": "청소",
+    "hiragana": "そうじ",
+    "choices": [
+      "요리",
+      "청소",
+      "수리",
+      "설계"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "旅行",
+    "answer": "여행",
+    "hiragana": "りょこう",
+    "choices": [
+      "공부",
+      "운동",
+      "여행",
+      "독서"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "買い物",
+    "answer": "쇼핑",
+    "hiragana": "かいもの",
+    "choices": [
+      "청소",
+      "공부",
+      "요리",
+      "쇼핑"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "食事",
+    "answer": "식사",
+    "hiragana": "しょくじ",
+    "choices": [
+      "간식",
+      "식사",
+      "요리",
+      "음료"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "会話",
+    "answer": "대화",
+    "hiragana": "かいわ",
+    "choices": [
+      "대화",
+      "논쟁",
+      "고백",
+      "발표"
+    ],
+    "level": "N4"
+  },
+  {
+    "question": "判断",
+    "answer": "판단",
+    "hiragana": "はんだん",
+    "choices": [
+      "판단",
+      "결정",
+      "감정",
+      "이해"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "記録",
+    "answer": "기록",
+    "hiragana": "きろく",
+    "choices": [
+      "저장",
+      "기억",
+      "기록",
+      "분석"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "失敗",
+    "answer": "실패",
+    "hiragana": "しっぱい",
+    "choices": [
+      "성공",
+      "실패",
+      "도전",
+      "기회"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "発表",
+    "answer": "발표",
+    "hiragana": "はっぴょう",
+    "choices": [
+      "발표",
+      "대화",
+      "회의",
+      "토론"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "関係",
+    "answer": "관계",
+    "hiragana": "かんけい",
+    "choices": [
+      "관계",
+      "원인",
+      "상황",
+      "조건"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "予定",
+    "answer": "예정",
+    "hiragana": "よてい",
+    "choices": [
+      "계획",
+      "예정",
+      "확정",
+      "진행"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "理由",
+    "answer": "이유",
+    "hiragana": "りゆう",
+    "choices": [
+      "이유",
+      "목적",
+      "수단",
+      "결과"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "方法",
+    "answer": "방법",
+    "hiragana": "ほうほう",
+    "choices": [
+      "도구",
+      "방법",
+      "결과",
+      "과정"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "感情",
+    "answer": "감정",
+    "hiragana": "かんじょう",
+    "choices": [
+      "기억",
+      "감정",
+      "상상",
+      "판단"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "希望",
+    "answer": "희망",
+    "hiragana": "きぼう",
+    "choices": [
+      "희망",
+      "절망",
+      "기대",
+      "흥미"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "現実",
+    "answer": "현실",
+    "hiragana": "げんじつ",
+    "choices": [
+      "상상",
+      "현실",
+      "소문",
+      "환상"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "機会",
+    "answer": "기회",
+    "hiragana": "きかい",
+    "choices": [
+      "기회",
+      "계획",
+      "대안",
+      "미래"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "途中",
+    "answer": "도중",
+    "hiragana": "とちゅう",
+    "choices": [
+      "시작",
+      "도중",
+      "완료",
+      "중단"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "内容",
+    "answer": "내용",
+    "hiragana": "ないよう",
+    "choices": [
+      "형식",
+      "내용",
+      "표지",
+      "정리"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "感動",
+    "answer": "감동",
+    "hiragana": "かんどう",
+    "choices": [
+      "감동",
+      "기억",
+      "이해",
+      "지식"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "利用",
+    "answer": "이용",
+    "hiragana": "りよう",
+    "choices": [
+      "사용",
+      "이용",
+      "이해",
+      "연결"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "緊張",
+    "answer": "긴장",
+    "hiragana": "きんちょう",
+    "choices": [
+      "안정",
+      "흥분",
+      "긴장",
+      "평화"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "責任",
+    "answer": "책임",
+    "hiragana": "せきにん",
+    "choices": [
+      "성공",
+      "책임",
+      "자유",
+      "규칙"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "結果",
+    "answer": "결과",
+    "hiragana": "けっか",
+    "choices": [
+      "원인",
+      "이유",
+      "결과",
+      "조건"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "誤解",
+    "answer": "오해",
+    "hiragana": "ごかい",
+    "choices": [
+      "이해",
+      "해석",
+      "오해",
+      "의심"
+    ],
+    "level": "N3"
+  },
+  {
+    "question": "条件",
+    "answer": "조건",
+    "hiragana": "じょうけん",
+    "choices": [
+      "조건",
+      "환경",
+      "결정",
+      "목표"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "解決",
+    "answer": "해결",
+    "hiragana": "かいけつ",
+    "choices": [
+      "문제",
+      "해결",
+      "진행",
+      "설명"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "証明",
+    "answer": "증명",
+    "hiragana": "しょうめい",
+    "choices": [
+      "설명",
+      "이해",
+      "증명",
+      "추측"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "適用",
+    "answer": "적용",
+    "hiragana": "てきよう",
+    "choices": [
+      "적용",
+      "준비",
+      "변경",
+      "선택"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "調査",
+    "answer": "조사",
+    "hiragana": "ちょうさ",
+    "choices": [
+      "검토",
+      "조사",
+      "판단",
+      "결론"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "報告",
+    "answer": "보고",
+    "hiragana": "ほうこく",
+    "choices": [
+      "보고",
+      "추측",
+      "주장",
+      "인식"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "手続き",
+    "answer": "절차",
+    "hiragana": "てつづき",
+    "choices": [
+      "계획",
+      "절차",
+      "방식",
+      "기획"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "環境",
+    "answer": "환경",
+    "hiragana": "かんきょう",
+    "choices": [
+      "상황",
+      "환경",
+      "조건",
+      "배경"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "整理",
+    "answer": "정리",
+    "hiragana": "せいり",
+    "choices": [
+      "정리",
+      "분리",
+      "보관",
+      "설정"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "意識",
+    "answer": "의식",
+    "hiragana": "いしき",
+    "choices": [
+      "감각",
+      "지각",
+      "의식",
+      "경험"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "対策",
+    "answer": "대책",
+    "hiragana": "たいさく",
+    "choices": [
+      "대책",
+      "방지",
+      "정책",
+      "조치"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "管理",
+    "answer": "관리",
+    "hiragana": "かんり",
+    "choices": [
+      "경영",
+      "감독",
+      "관리",
+      "통제"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "需要",
+    "answer": "수요",
+    "hiragana": "じゅよう",
+    "choices": [
+      "수요",
+      "공급",
+      "비용",
+      "이윤"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "契約",
+    "answer": "계약",
+    "hiragana": "けいやく",
+    "choices": [
+      "계약",
+      "합의",
+      "약속",
+      "보증"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "確認",
+    "answer": "확인",
+    "hiragana": "かくにん",
+    "choices": [
+      "인정",
+      "확인",
+      "검사",
+      "결정"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "保存",
+    "answer": "보존",
+    "hiragana": "ほぞん",
+    "choices": [
+      "보존",
+      "보관",
+      "저장",
+      "보호"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "制限",
+    "answer": "제한",
+    "hiragana": "せいげん",
+    "choices": [
+      "한계",
+      "제한",
+      "경계",
+      "범위"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "証言",
+    "answer": "증언",
+    "hiragana": "しょうげん",
+    "choices": [
+      "증언",
+      "확인",
+      "기록",
+      "증거"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "尊重",
+    "answer": "존중",
+    "hiragana": "そんちょう",
+    "choices": [
+      "존중",
+      "관심",
+      "협조",
+      "복종"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "維持",
+    "answer": "유지",
+    "hiragana": "いじ",
+    "choices": [
+      "유지",
+      "보존",
+      "보관",
+      "관리"
+    ],
+    "level": "N2"
+  },
+  {
+    "question": "抽象",
+    "answer": "추상",
+    "hiragana": "ちゅうしょう",
+    "choices": [
+      "구체",
+      "일반",
+      "추상",
+      "단순"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "認識",
+    "answer": "인식",
+    "hiragana": "にんしき",
+    "choices": [
+      "감정",
+      "지각",
+      "인식",
+      "기억"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "主観",
+    "answer": "주관",
+    "hiragana": "しゅかん",
+    "choices": [
+      "객관",
+      "주관",
+      "결론",
+      "정의"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "証拠",
+    "answer": "증거",
+    "hiragana": "しょうこ",
+    "choices": [
+      "증거",
+      "가설",
+      "주장",
+      "의심"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "概念",
+    "answer": "개념",
+    "hiragana": "がいねん",
+    "choices": [
+      "개념",
+      "정의",
+      "분석",
+      "설명"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "前提",
+    "answer": "전제",
+    "hiragana": "ぜんてい",
+    "choices": [
+      "조건",
+      "전제",
+      "해결",
+      "계획"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "理論",
+    "answer": "이론",
+    "hiragana": "りろん",
+    "choices": [
+      "사실",
+      "이론",
+      "예상",
+      "추측"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "仮説",
+    "answer": "가설",
+    "hiragana": "かせつ",
+    "choices": [
+      "검증",
+      "가설",
+      "사례",
+      "실험"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "検証",
+    "answer": "검증",
+    "hiragana": "けんしょう",
+    "choices": [
+      "확인",
+      "실험",
+      "검증",
+      "관찰"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "構造",
+    "answer": "구조",
+    "hiragana": "こうぞう",
+    "choices": [
+      "조직",
+      "내용",
+      "구조",
+      "형식"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "確率",
+    "answer": "확률",
+    "hiragana": "かくりつ",
+    "choices": [
+      "기회",
+      "가능성",
+      "확률",
+      "현상"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "概略",
+    "answer": "개요",
+    "hiragana": "がいりゃく",
+    "choices": [
+      "개요",
+      "예시",
+      "해석",
+      "요점"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "構成",
+    "answer": "구성",
+    "hiragana": "こうせい",
+    "choices": [
+      "구성",
+      "요소",
+      "통합",
+      "집합"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "展開",
+    "answer": "전개",
+    "hiragana": "てんかい",
+    "choices": [
+      "정리",
+      "진행",
+      "전개",
+      "설명"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "比較",
+    "answer": "비교",
+    "hiragana": "ひかく",
+    "choices": [
+      "차이",
+      "대비",
+      "비교",
+      "대조"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "補足",
+    "answer": "보충",
+    "hiragana": "ほそく",
+    "choices": [
+      "요약",
+      "해석",
+      "보충",
+      "정리"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "検討",
+    "answer": "검토",
+    "hiragana": "けんとう",
+    "choices": [
+      "검토",
+      "반영",
+      "조사",
+      "연구"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "適応",
+    "answer": "적응",
+    "hiragana": "てきおう",
+    "choices": [
+      "적용",
+      "적응",
+      "반영",
+      "반복"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "解釈",
+    "answer": "해석",
+    "hiragana": "かいしゃく",
+    "choices": [
+      "요약",
+      "설명",
+      "해석",
+      "비교"
+    ],
+    "level": "N1"
+  },
+  {
+    "question": "前後",
+    "answer": "전후",
+    "hiragana": "ぜんご",
+    "choices": [
+      "이전",
+      "전후",
+      "시점",
+      "순서"
+    ],
+    "level": "N1"
+  }
+]

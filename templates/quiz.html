@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}퀴즈 - NihonGO!{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .quiz-box {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fffdf8;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    .question {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .choice {
+        display: block;
+        margin: 10px 0;
+    }
+    .feedback {
+        font-size: 20px;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+</style>
+
+{% if wait_next %}
+<script>
+    setTimeout(function () {
+        window.location.href = "/quiz";
+    }, 1500);
+</script>
+{% endif %}
+
+<div class="quiz-box">
+    <h1>문제 {{ current + 1 }} / {{ total }}</h1>
+    <div class="question">{{ question }}</div>
+    <form method="POST" action="/quiz">
+        {% for choice in choices %}
+            <label class="choice">
+                <input type="radio" name="choice" value="{{ choice }}" required>
+                {{ choice }}
+            </label>
+        {% endfor %}
+        <button type="submit">제출</button>
+    </form>
+
+    {% if show_result %}
+        <div class="feedback">{{ feedback }}</div>
+    {% endif %}
+</div>
+{% endblock %}

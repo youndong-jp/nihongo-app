@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>문제 수 선택 - NihonGO!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fefefe;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        select, button {
+            padding: 10px;
+            margin-top: 20px;
+            width: 80%;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>문제를 몇 개 풀고 싶나요?</h1>
+    <form method="POST" action="/select-count">
+        <select name="num_questions" required>
+            <option value="" disabled selected>문제 수 선택</option>
+            <option value="5">5개</option>
+            <option value="10">10개</option>
+            <option value="15">15개</option>
+            <option value="20">20개</option>
+        </select>
+        <br>
+        <button type="submit">퀴즈 시작</button>
+    </form>
+</body>
+</html>

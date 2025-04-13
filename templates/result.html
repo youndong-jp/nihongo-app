@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}결과 - NihonGO!{% endblock %}
+{% block content %}
+<h1>📝 퀴즈 결과</h1>
+<p>점수: {{ session['score'] }} / {{ session['num_questions'] }}</p>
+
+{% set vocab_list = session.get('vocab_list', []) %}
+{% set wrong_count = 0 %}
+
+{% for item in session['answers'] %}
+    <div style="margin-bottom: 10px;">
+        <strong>{{ item.question }}</strong> -
+        당신의 답:
+        <span style="color: {{ 'green' if item.selected == item.correct.split()[0] else 'red' }}">
+            {{ item.selected }}
+        </span>
+        / 정답: {{ item.correct }}
+
+        {% if item.level %}
+            <span style="color: gray;">({{ item.level }})</span>
+        {% endif %}
+
+        {% if item.selected != item.correct.split()[0] %}
+    {% set wrong_count = wrong_count + 1 %}
+
+    {% set already_added = vocab_list
+        | selectattr('question', 'equalto', item.question)
+        | selectattr('answer', 'equalto', item.correct.split()[0])
+        | list | length > 0 %}
+
+    {% if already_added %}
+        <span style="color: green;">✅ 단어장 추가 완료</span>
+    {% else %}
+        <form method="post" action="{{ url_for('add_to_vocab') }}" style="display:inline;">
+            <input type="hidden" name="question" value="{{ item.question }}">
+            <input type="hidden" name="answer" value="{{ item.correct.split()[0] }}">
+            <button type="submit">➕ 단어장에 추가</button>
+        </form>
+    {% endif %}
+{% endif %}
+
+
+    </div>
+{% endfor %}
+
+{% if wrong_count > 0 %}
+    <div style="margin-top: 30px;">
+        <a href="{{ url_for('retry_wrong') }}">
+            <button>🔁 틀린 문제 다시 풀기</button>
+        </a>
+    </div>
+{% endif %}
+
+<a href="/start">
+    <button style="margin-top: 20px;">🚀 처음부터 다시 풀기</button>
+</a>
+{% endblock %}
