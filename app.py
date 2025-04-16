@@ -192,6 +192,7 @@ def vocab():
     vocab_list = session.get('vocab_list', [])
     return render_template('vocab.html', vocab_list=vocab_list)
 
+# --- 반드시 있어야 하는 라우트 ---
 @app.route('/add-to-vocab', methods=['POST'])
 def add_to_vocab():
     question = request.form.get('question')
