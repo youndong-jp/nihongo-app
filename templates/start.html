@@ -3,38 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>레벨 선택 - NihonGO!</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 400px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fefefe;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        select, button {
-            padding: 10px;
-            margin-top: 20px;
-            width: 80%;
-            font-size: 16px;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>당신의 일본어 레벨은?</h1>
-    <form method="POST" action="/start">
-        <select name="level" required>
-            <option value="" disabled selected>레벨을 선택하세요</option>
-            <option value="N5">N5 (입문)</option>
-            <option value="N4">N4 (초급)</option>
-            <option value="N3">N3 (중급)</option>
-            <option value="N2">N2 (고급)</option>
-            <option value="N1">N1 (최상급)</option>
-        </select>
-        <br>
-        <button type="submit">다음</button>
-    </form>
+    <div class="container">
+        <h1>당신의 일본어 레벨은?</h1>
+
+        <form method="POST" action="/start">
+            <select name="level" required>
+                <option value="" disabled selected>레벨을 선택하세요</option>
+                <option value="N5">N5 (입문)</option>
+                <option value="N4">N4 (초급)</option>
+                <option value="N3">N3 (중급)</option>
+                <option value="N2">N2 (고급)</option>
+                <option value="N1">N1 (최상급)</option>
+            </select>
+            <br>
+            <button type="submit">다음</button>
+        </form>
+    </div>
 </body>
 </html>

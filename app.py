@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, session, redirect, url_for
+from flask import Flask, render_template, request, session, redirect, url_for , jsonify
 import random
 import json
 from datetime import datetime
@@ -22,7 +22,11 @@ ALL_DATA = load_quiz_data()
 # ----------------------------------
 @app.route('/')
 def index():
-    return render_template('index.html')
+    vocab_list = session.get('vocab_list', [])
+    recent_vocab = vocab_list[-5:]  # 최근 5개 단어
+    return render_template('index.html', recent_vocab=recent_vocab)
+
+
 
 @app.route('/start', methods=['GET', 'POST'])
 def start():
@@ -66,24 +70,25 @@ def quiz():
     total = session.get('num_questions', 5)
     questions = session.get('questions', [])
 
+    # 모든 문제 다 풀었으면 결과로 이동
     if current >= total:
         return redirect(url_for('result'))
 
-    show_result = False
-    feedback = ''
-    selected_choice = None
-
+    # ✅ 이전 문제의 결과 보여주는 단계
     if session.get('show_result'):
         feedback = session.pop('feedback')
         selected_choice = session.pop('selected')
-        show_result = True
         session.pop('show_result')
-        session['current'] += 1
+
+        show_result = True
+        question = questions[current]['question']
+        choices = questions[current]['choices'][:]
+        random.shuffle(choices)
 
         return render_template(
             'quiz.html',
-            question=questions[current]['question'],
-            choices=questions[current]['choices'],
+            question=question,
+            choices=choices,
             current=current,
             total=total,
             show_result=show_result,
@@ -92,32 +97,19 @@ def quiz():
             wait_next=True
         )
 
-
+    # ✅ 사용자가 정답을 제출한 경우 (POST)
     elif request.method == 'POST':
-
         selected_choice = request.form.get('choice')
-
         correct_answer = questions[current]['answer']
-
-        correct_answer_text = correct_answer
-
         hiragana = questions[current].get('hiragana', '')
 
-        if selected_choice == correct_answer_text:
-
+        if selected_choice == correct_answer:
             feedback = f"O - 정답입니다: '{correct_answer} {hiragana}'"
-
             session['score'] += 1
-
         else:
-
             feedback = f"X - 정답은 '{correct_answer} {hiragana}'입니다."
 
-        session['selected'] = selected_choice
-        session['feedback'] = feedback
-        session['show_result'] = True
-
-        # 정답 기록 (이거 없으면 결과에 아무 것도 안 나와!)
+        # 기록 저장
         session['answers'].append({
             'question': questions[current]['question'],
             'selected': selected_choice,
@@ -126,9 +118,15 @@ def quiz():
             'level': questions[current].get('level')
         })
 
+        # 결과 보여줄 준비
+        session['selected'] = selected_choice
+        session['feedback'] = feedback
+        session['show_result'] = True
+        session['current'] += 1  # ✅ 이건 여기서 처리!
+
         return redirect(url_for('quiz'))
 
-    # GET 요청 처리
+    # ✅ 기본 화면 (문제 풀기)
     question = questions[current]['question']
     choices = questions[current]['choices'][:]
     random.shuffle(choices)
@@ -139,9 +137,9 @@ def quiz():
         choices=choices,
         current=current,
         total=total,
-        show_result=show_result,
-        feedback=feedback,
-        selected_choice=selected_choice,
+        show_result=False,
+        feedback='',
+        selected_choice=None,
         wait_next=False
     )
 
@@ -197,10 +195,10 @@ def vocab():
 @app.route('/add-to-vocab', methods=['POST'])
 def add_to_vocab():
     question = request.form.get('question')
-    answer = request.form.get('answer').split()[0]  # ← 핵심: '먹다 たべる' → '먹다'
+    answer = request.form.get('answer')
 
     matched_answer = next(
-        (a for a in session.get('answers', []) if a['question'] == question and a['correct'].split()[0] == answer),
+        (a for a in session.get('answers', []) if a['question'] == question and a['correct'] == answer),
         None
     )
 
@@ -213,10 +211,9 @@ def add_to_vocab():
 
     new_item = {
         'question': question,
-        'answer': answer,               # "먹다"
-        'hiragana': hiragana,           # "たべる"
+        'answer': answer,
+        'hiragana': hiragana,
         'level': level,
-        'added_at': datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # (선택) 추가일도 넣기
     }
 
     vocab_list = session.get('vocab_list', [])
@@ -225,6 +222,8 @@ def add_to_vocab():
         session['vocab_list'] = vocab_list
 
     return redirect(url_for('result'))
+
+
 @app.route('/delete-vocab', methods=['POST'])
 def delete_vocab():
     word = request.form.get('question')

@@ -1,11 +1,35 @@
-<!-- templates/index.html -->
-<h1>NihonGO! 일본어 퀴즈</h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>NihonGO! 일본어 퀴즈</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>NihonGO! 일본어 퀴즈</h1>
 
-<!-- 기존 /start 라우트로 연결 -->
-<form action="{{ url_for('start') }}" method="get">
-    <button type="submit">📝 테스트 시작</button>
-</form>
+        <!-- 테스트 시작 버튼 -->
+        <form action="{{ url_for('start') }}" method="get">
+            <button type="submit">📝 테스트 시작</button>
+        </form>
 
-<form action="{{ url_for('vocab') }}" method="get">
-    <button type="submit">📘 단어장 보기</button>
-</form>
+        <!-- 단어장 박스 -->
+        <div class="vocab-box">
+            <form action="{{ url_for('vocab') }}" method="get">
+                <button class="vocab-button" type="submit">📘 단어장 보기</button>
+            </form>
+
+            <div class="recent-words">
+                {% for word in recent_vocab %}
+                    <div class="word-item">
+                        <strong>{{ word.question }}</strong> - 
+                        <span>{{ word.hiragana }}</span> - 
+                        <span>{{ word.answer }}</span>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
